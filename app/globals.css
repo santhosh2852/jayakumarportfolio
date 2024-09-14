@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body,*{
+    -webkit-user-drag: none; /* For WebKit browsers like Safari */
+    user-drag: none; /* Standard property */
+    -moz-user-select: none; /* Firefox */
+    -webkit-user-select: none; /* Safari, Chrome */
+    -ms-user-select: none; /* Internet Explorer */
+    user-select: none; /* CSS3 */
+}

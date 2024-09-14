@@ -4,6 +4,9 @@ import React from 'react';
 import NavBar from '../NavBar/page';
 import ResumeButton from './ResumeButton';
 import ServicePage from './ServicePage';
+import Education from './Education';
+import ProjectPage from './ProjectPage/ProjectPage';
+import SkillsPage from './SkillsPage/SkillsPage';
 const HomePage = () => {
   return (
     <div className="">
@@ -17,6 +20,9 @@ const HomePage = () => {
         </div>
       </div>
       <ServicePage/>
+      <ProjectPage/>
+      <Education/>
+      <SkillsPage/>
     </div>
   )
 }
