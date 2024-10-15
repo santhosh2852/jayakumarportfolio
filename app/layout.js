@@ -1,5 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+// import Image from "next/image";
+// import ManojTittle from "./.././public/ProjectPageImage/ManojTittle.png";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,6 +14,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        {/* <link rel="icon" href="/ManojTittle.png" /> */}
+      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   );

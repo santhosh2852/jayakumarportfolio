@@ -9,7 +9,7 @@ import ContactUs from '../ContactUs/page';
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className='block w-1/2 ml-auto mr-auto '>
+    <nav className='mr-auto md:w-1/2 md:ml-auto md:block'>
       <div className='justify-start block gap-10 pt-5 m-0 text-center'>
         <div className='p-5 text-white bg-black rounded-lg'>
           <div className='flex items-center justify-center gap-20 text-xl'>

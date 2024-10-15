@@ -21,9 +21,9 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const ProjectPage = () => {
   return (
-    <div className='p-10 bg-orange-200'>
+    <div className='p-10 bg-orange-200 '>
     <div>
-      <h1 className='text-5xl font-bold'>PROJECT</h1>
+      <h1 className='text-2xl font-bold text-center md:text-5xl md:text-left'>PROJECT</h1>
     </div>
       <Swiper
         effect={'coverflow'}

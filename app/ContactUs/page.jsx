@@ -1,30 +1,71 @@
 "use client";
 
-import React from 'react'
+import React,{ useRef } from 'react'
 import NavBar from '../NavBar/page'
+import Image from 'next/image';
+// import Mano from './../../public/ProjectPageImage/manoj.jpg'
+import emailjs from '@emailjs/browser';
+
 const ContactUs = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_hwrbjwn', 'template_ea1jdn8', form.current, {
+        publicKey: 'bP6YC_l57ulsC9wY9',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          var email = document.getElementById('email');
+          var name = document.getElementById('name');
+          var Message=document.getElementById('Message');
+          email.value = '';
+          name.value = '';
+          Message.value = '';
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
+  
   return (
-    <div className='min-h-screen p-10 m-0 min-w-max bg-blue-950'>
+    <div className='w-screen min-h-screen p-10 m-0 bg-blue-950'>
         <NavBar/>
-        <div className="fixed right-0 flex flex-col items-center justify-center w-1/2 h-screen p-10 transform -translate-y-1/2 top-1/2">
-              <input 
+{/*         
+        <Image className='pt-5 md:pt-0'
+        src={Mano}
+        alt='JayaKumar'
+        height={200}
+        width={200}
+        
+        /> */}
+        <div className="flex items-center justify-center h-screen mt-auto mb-auto md:fixed md:p-10 md:-translate-y-1/2 md:transform md:w-1/2 md:flex-col md:flex md:right-0 md:top-1/2">
+        <form ref={form} onSubmit={sendEmail}>
+              <input id='name'
                 required 
                 type="text" 
                 className="flex h-10 mb-4 text-sm text-center text-black border-2 border-black rounded-md w-80" 
                 placeholder='Name' 
               />
-              <input 
+              <input id='email'
                 required 
                 type="text" 
                 className="flex h-10 mb-4 text-sm text-center text-black border-2 border-black rounded-md w-80" 
                 placeholder='Email' 
               />
               <textarea 
-                required 
+                required id='Message'
                 className='flex h-40 pt-2 mb-4 text-sm text-center text-black border-2 border-black rounded-md resize-none w-80' 
                 placeholder='Message'
               ></textarea>
               <button className='flex items-center justify-center p-2 text-sm text-center bg-white border-2 border-white rounded-md'>Contact Me</button>
+          </form>
       </div>
     </div>
   )
