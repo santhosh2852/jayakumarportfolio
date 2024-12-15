@@ -5,7 +5,7 @@ import NavBar from '../NavBar/page'
 import Image from 'next/image';
 // import Mano from './../../public/ProjectPageImage/manoj.jpg'
 import emailjs from '@emailjs/browser';
-
+import Manoj from '@/public/ProjectPageImage/manoj.png';
 const ContactUs = () => {
 
   const form = useRef();
@@ -45,6 +45,13 @@ const ContactUs = () => {
         width={200}
         
         /> */}
+        <Image
+          src={Manoj}
+          alt='Manoj'
+          width={300}
+          height={300}
+          className='ml-auto mr-auto md:float-left md:pt-24'
+          />
         <div className="flex items-center justify-center h-screen mt-auto mb-auto md:fixed md:p-10 md:-translate-y-1/2 md:transform md:w-1/2 md:flex-col md:flex md:right-0 md:top-1/2">
         <form ref={form} onSubmit={sendEmail}>
               <input id='name'

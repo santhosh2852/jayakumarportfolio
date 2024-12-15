@@ -9,12 +9,21 @@ import ProjectPage from './ProjectPage/ProjectPage';
 import SkillsPage from './SkillsPage/SkillsPage';
 import ExperiencePage from './ExperiencePage/ExperiencePage';
 import FooterBar from '../FooterBar/page';
+import Image from 'next/image';
+import Manoj from '@/public/ProjectPageImage/manoj.png';
 
 const HomePage = () => { 
   return (
     <div className="">
-      <div className="p-10 m-0 text-center bg-black select-none md:text-left">
+      <div className="p-10 m-0 text-center select-none bg-slate-500 md:text-left">
         <NavBar/>
+        <Image
+          src={Manoj}
+          alt='Manoj'
+          width={300}
+          height={300}
+          className='ml-auto mr-auto md:float-right md:pt-11'
+          />
         <div className='h-screen pt-10'>
           <h1 className='text-5xl font-bold text-white md:text-7xl animate-jump'>Jaya Kumar</h1>
           <h2 className='pt-5 text-4xl font-medium text-transparent md:text-5xl animate-jump bg-clip-text bg-gradient-to-r from-orange-600 via-orange-800 to-orange-900'>Graphic Designer</h2>
