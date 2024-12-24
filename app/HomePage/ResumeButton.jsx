@@ -22,7 +22,7 @@ const ResumeButton = () => {
 
   return (
     <div className=''>
-        <a type="submit" className='justify-center block p-5 pt-5 m-5 ml-auto mr-auto text-center text-black bg-green-400 rounded-md h-max w-max' target='_blank' href='https://drive.google.com/file/d/1KjW8FZ2Wdg1LQPmXXLYLhNQrCCGesOYb/view?usp=drive_link'>Download Mine Resume</a>
+        <a type="submit" className='justify-center block p-5 pt-5 m-5 ml-auto mr-auto text-center text-black bg-green-400 rounded-md h-max w-max' target='_blank' href='https://drive.google.com/file/d/1KjW8FZ2Wdg1LQPmXXLYLhNQrCCGesOYb/view?usp=drive_link'>Download Resume</a>
     </div>
   )
 }

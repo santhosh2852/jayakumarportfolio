@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState } from 'react'
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import Image1 from '../../../public/ProjectPageImage/Image1.jpg';
@@ -21,10 +21,10 @@ import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const ProjectPage = () => {
   return (
-    <div className='p-10 bg-orange-200 '>
-    <div>
-      <h1 className='text-2xl font-bold text-center md:text-5xl md:text-left'>PROJECT</h1>
-    </div>
+    <div className='p-10 bg-orange-200'>
+      <div>
+        <h1 className='text-2xl font-bold text-center md:text-5xl md:text-left'>PROJECT</h1>
+      </div>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -43,56 +43,74 @@ const ProjectPage = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <Image
-            src={Image1}
-            alt='Image 1'
-            width={500}
-            height={500}
-          />
+          <div className="relative w-full h-64">
+            <Image
+              src={Image1}
+              alt='Image 1'
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            src={Image2}
-            alt='Image 2'
-            width={500}
-            height={500}
-          />
+          <div className="relative w-full h-64">
+            <Image
+              src={Image2}
+              alt='Image 2'
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            src={Image3}
-            alt='Image 3'
-            width={500}
-            height={500}
-          />
+          <div className="relative w-full h-64">
+            <Image
+              src={Image3}
+              alt='Image 3'
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            src={Image4}
-            alt='Image 4'
-            width={500}
-            height={500}
-          />
+          <div className="relative w-full h-64">
+            <Image
+              src={Image4}
+              alt='Image 4'
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            src={Image5}
-            alt='Image 5'
-            width={500}
-            height={500}
-          />
+          <div className="relative w-full h-64">
+            <Image
+              src={Image5}
+              alt='Image 5'
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
+            />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image
-            src={Image6}
-            alt='Image 6'
-            width={500}
-            height={500}
-          />
+          <div className="relative w-full h-64">
+            <Image
+              src={Image6}
+              alt='Image 6'
+              layout="fill"
+              objectFit="cover"
+              className="w-full h-full"
+            />
+          </div>
         </SwiperSlide>
       </Swiper>
     </div>
   )
 }
 
-export default ProjectPage
+export default ProjectPage;

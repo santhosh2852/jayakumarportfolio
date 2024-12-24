@@ -35,7 +35,7 @@ const ContactUs = () => {
 
   
   return (
-    <div className='w-screen min-h-screen p-10 m-0 bg-blue-950'>
+    <div className='w-screen min-h-screen p-10 m-0 bg-gray-100'>
         <NavBar/>
 {/*         
         <Image className='pt-5 md:pt-0'
@@ -50,7 +50,7 @@ const ContactUs = () => {
           alt='Manoj'
           width={300}
           height={300}
-          className='ml-auto mr-auto md:float-left md:pt-24'
+          className='pt-32 ml-auto mr-auto md:float-left md:pt-32 '
           />
         <div className="flex items-center justify-center h-screen mt-auto mb-auto md:fixed md:p-10 md:-translate-y-1/2 md:transform md:w-1/2 md:flex-col md:flex md:right-0 md:top-1/2">
         <form ref={form} onSubmit={sendEmail}>
@@ -71,7 +71,7 @@ const ContactUs = () => {
                 className='flex h-40 pt-2 mb-4 text-sm text-center text-black border-2 border-black rounded-md resize-none w-80' 
                 placeholder='Message'
               ></textarea>
-              <button className='flex items-center justify-center p-2 text-sm text-center bg-white border-2 border-white rounded-md'>Contact Me</button>
+              <button className='flex items-center justify-center p-2 text-sm text-center bg-white border-2 border-black rounded-md'>Contact Me</button>
           </form>
       </div>
     </div>
