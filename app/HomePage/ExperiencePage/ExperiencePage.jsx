@@ -7,25 +7,25 @@ const experiences = [
     year: '2016 – 2018',
     title: 'Site Engineer',
     company: 'Vsk Builders',
-    description: 'Worked on various social media posts, day wishes posts, and product posts. Gained experience in Adobe Photoshop, Illustrator, and Canva.'
+    description: 'A Site Engineer is responsible for overseeing construction projects, ensuring technical accuracy, managing on-site operations, and ensuring safety and compliance with design specifications'
   },
   {
     year: '2018 – 2021',
     title: 'Audit clerk and CNC Draftsman',
     company: 'SHIV SHAKTI ENTERPRISE SDN.BHD',
-    description: 'Led design projects for multiple clients, creating high-quality designs that met their needs. Specialized in branding and marketing materials.'
+    description: 'An Audit Clerk reviews financial records for accuracy, while a CNC Draftsman creates technical drawings for CNC machine operations'
   },
   {
     year: '2023 - Mar - Aug',
     title: 'Social Media Marketer',
     company: 'Create Artist Studio',
-    description: 'Managed a team of designers and worked on large-scale projects. Focused on innovative design solutions and client satisfaction.'
+    description: 'A Social Media Marketer develops and executes strategies to promote brands, engage audiences, and drive traffic through social media platforms'
   },
   {
     year: '2023 - Sep - 2024 Present',
     title: 'Graphic Designer',
     company: 'South wind Studios',
-    description: 'Managed a team of designers and worked on large-scale projects. Focused on innovative design solutions and client satisfaction.'
+    description: 'A Graphic Designer creates visual concepts, designs, and layouts for print and digital media to communicate ideas and messages effectively'
   }
 ];
 

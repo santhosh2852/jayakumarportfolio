@@ -24,7 +24,7 @@ const SkillsPage = () => {
   return (
     <div className='p-10 '>
         <div className=''>
-            <h1 className='text-2xl font-bold text-center md:text-5xl md:text-left'>SERVICE</h1>
+            <h1 className='text-2xl font-bold text-center md:text-5xl md:text-left'>SKILLS</h1>
         </div>
       <Swiper
         spaceBetween={30}

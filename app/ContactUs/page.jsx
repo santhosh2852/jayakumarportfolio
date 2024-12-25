@@ -35,7 +35,9 @@ const ContactUs = () => {
 
   
   return (
-    <div className='w-screen min-h-screen p-10 m-0 bg-gray-100'>
+    // <div className='block w-screen min-h-screen p-10 m-0 ml-auto mr-auto overflow-x-hidden bg-gray-100'>
+      // <NavBar/>
+    <div className='w-screen min-h-screen p-10 m-0 bg-gray-100 md:p-24'>
         <NavBar/>
 {/*         
         <Image className='pt-5 md:pt-0'
@@ -50,9 +52,9 @@ const ContactUs = () => {
           alt='Manoj'
           width={300}
           height={300}
-          className='pt-32 ml-auto mr-auto md:float-left md:pt-32 '
+          className='ml-auto mr-auto pt-28 md:float-left md:pt-32 '
           />
-        <div className="flex items-center justify-center h-screen mt-auto mb-auto md:fixed md:p-10 md:-translate-y-1/2 md:transform md:w-1/2 md:flex-col md:flex md:right-0 md:top-1/2">
+        <div className="flex items-center justify-center pt-10 md:fixed md:-translate-y-1/2 md:transform md:w-1/2 md:flex-col md:flex md:right-0 md:top-1/2">
         <form ref={form} onSubmit={sendEmail}>
               <input id='name'
                 required 
@@ -75,6 +77,7 @@ const ContactUs = () => {
           </form>
       </div>
     </div>
+    // </div>
   )
 }
 

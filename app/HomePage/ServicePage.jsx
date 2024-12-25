@@ -2,6 +2,7 @@
 
 import React from 'react'
 import './RunningText.css'
+// @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 const ServicePage = () => {
   return (
     <div className='p-10 min-w-max'>
