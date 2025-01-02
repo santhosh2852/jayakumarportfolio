@@ -7,7 +7,7 @@ import Image1 from '../../../public/ProjectPageImage/Image1.jpg';
 import Image2 from '../../../public/ProjectPageImage/Image2.jpg';
 import Image3 from '../../../public/ProjectPageImage/Image3.jpg';
 import Image4 from '../../../public/ProjectPageImage/Image4.jpg';
-import Image5 from '../../../public/ProjectPageImage/Image5.png';
+import Image5 from '../../../public/ProjectPageImage/Image5.jpg';
 import Image6 from '../../../public/ProjectPageImage/Image6.jpg';
 // Import Swiper styles
 import 'swiper/css';
