@@ -4,34 +4,22 @@ import React from 'react';
 
 const experiences = [
   {
-    year: '2016 – 2018',
-    title: 'Site Engineer',
-    company: 'Vsk Builders',
-    description: 'A Site Engineer is responsible for overseeing construction projects, ensuring technical accuracy, managing on-site operations, and ensuring safety and compliance with design specifications'
+    year: '2012',
+    title: 'School',
+    company: 'MRR MAVMM MAT HR SEC SCHOOL',
+    description: 'A school is an educational institution designed to provide learning spaces and learning environments for the teaching of students under the direction of teachers. Most countries have systems of formal education, which is sometimes compulsory.'
   },
   {
-    year: '2018 – 2021',
-    title: 'Audit clerk and CNC Draftsman',
-    company: 'SHIV SHAKTI ENTERPRISE SDN.BHD',
-    description: 'An Audit Clerk reviews financial records for accuracy, while a CNC Draftsman creates technical drawings for CNC machine operations'
-  },
-  {
-    year: '2023 - Mar - Aug',
-    title: 'Social Media Marketer',
-    company: 'Create Artist Studio',
-    description: 'A Social Media Marketer develops and executes strategies to promote brands, engage audiences, and drive traffic through social media platforms'
-  },
-  {
-    year: '2023 - Sep - 2024 Present',
-    title: 'Graphic Designer',
-    company: 'South wind Studios',
-    description: 'A Graphic Designer creates visual concepts, designs, and layouts for print and digital media to communicate ideas and messages effectively'
+    year: '2016',
+    title: 'College',
+    company: 'SACS MAVMM ENGINEERING COLLEGE',
+    description: 'Civil Engineering is a professional engineering discipline that deals with the design, construction, and maintenance of the physical and naturally built environment, including public works such as roads, bridges, canals, dams, airports, sewerage systems, pipelines, structural components of buildings, and railways.'
   }
 ];
 
 const ExperiencePage = () => {
   return (
-    <div className="p-10">
+    <div className="justify-center p-10 ml-auto mr-auto text-center">
         <div className=''>
             <h1 className='text-2xl font-bold text-center md:text-5xl md:text-left'>Experience</h1>
         </div>

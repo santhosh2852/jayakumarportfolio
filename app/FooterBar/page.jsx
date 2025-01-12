@@ -15,8 +15,8 @@ const FooterBar = () => {
         <a href='https://www.behance.net/jayakumar94' target='_blank'>
           <Image
             src={Behance}
-            width={50}
-            height={50}
+            width={55}
+            height={55}
             alt='Behance image'
           />
         </a>

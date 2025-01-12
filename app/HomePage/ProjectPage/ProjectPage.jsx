@@ -1,6 +1,6 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import Image1 from '../../../public/ProjectPageImage/Image1.jpg';
@@ -20,6 +20,19 @@ import './styles.css';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const ProjectPage = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setSelectedImage(null);
+  };
+
   return (
     <div className='p-10 bg-orange-200'>
       <div>
@@ -42,73 +55,34 @@ const ProjectPage = () => {
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <div className="relative w-full h-64">
-            <Image
-              src={Image1}
-              alt='Image 1'
-              layout="fill"
-              objectFit="cover"
-              className="w-full h-full"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative w-full h-64">
-            <Image
-              src={Image2}
-              alt='Image 2'
-              layout="fill"
-              objectFit="cover"
-              className="w-full h-full"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative w-full h-64">
-            <Image
-              src={Image3}
-              alt='Image 3'
-              layout="fill"
-              objectFit="cover"
-              className="w-full h-full"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative w-full h-64">
-            <Image
-              src={Image4}
-              alt='Image 4'
-              layout="fill"
-              objectFit="cover"
-              className="w-full h-full"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative w-full h-64">
-            <Image
-              src={Image5}
-              alt='Image 5'
-              layout="fill"
-              objectFit="cover"
-              className="w-full h-full"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="relative w-full h-64">
-            <Image
-              src={Image6}
-              alt='Image 6'
-              layout="fill"
-              objectFit="cover"
-              className="w-full h-full"
-            />
-          </div>
-        </SwiperSlide>
+        {[Image1, Image2, Image3, Image4, Image5, Image6].map((image, index) => (
+          <SwiperSlide key={index} onClick={() => openModal(image)}>
+            <div className="relative w-full h-64">
+              <Image
+                src={image}
+                alt={`Image ${index + 1}`}
+                layout="fill"
+                objectFit="cover"
+                className="w-full h-full"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
+
+      {isOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75" onClick={closeModal}>
+          <div className="relative w-3/4 h-3/4">
+            <Image
+              src={selectedImage}
+              alt="Selected Image"
+              layout="fill"
+              objectFit="contain"
+              className="w-full h-full"
+            />
+          </div>
+        </div>
+      )}
     </div>
   )
 }

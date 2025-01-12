@@ -75,6 +75,7 @@ import React from 'react';
 import Image from 'next/image';
 import ps from '../../../public/ProjectPageImage/ps.png';
 import illu from '../../../public/ProjectPageImage/illu.png';
+import pp from '../../../public/ProjectPageImage/pp.png';
 
 import './styles.css';
 
@@ -113,14 +114,21 @@ const SkillsPage = () => {
         src={ps}
         alt='Photoshop'
         width={200}
-        height={100}
+        height={200}
         className='ml-auto mr-auto md:pt-11'
-      />
+      /><br/>
       <Image
         src={illu}
         alt='Illustrator'
-        width={400}
-        height={800}
+        width={200}
+        height={200}
+        className='ml-auto mr-auto md:pt-11'
+      />
+      <Image
+        src={pp}
+        alt='Premiere Pro'
+        width={200}
+        height={200}
         className='ml-auto mr-auto md:pt-11'
       />
     </div>
