@@ -31,7 +31,7 @@ const HomePage = () => {
           <h1 className='text-5xl font-bold text-black md:text-7xl animate-jump'>Jaya Kumar</h1>
           <TypingText/>
           {/* <h2 className='pt-5 pr-2 text-4xl font-medium text-red-500 md:text-5xl animate-jump' style={{ fontFamily: 'Anton, sans-serif' }}>Graphic Designer</h2> */}
-          <p className='pt-5 text-center text-black md:w-1/2 md:flex md:font-normal animate-jump md:text-left'>I am a professional graphic designer with 1 year of experience in the industry. Specializing in specific areas like Social Media Post, Day Wishes post And Product post I have a proven track record of success in delivering highquality designs that meet clients' needs. With expertise in list specific skills like Adobe Photoshop, Illustrator, Canva, etc. I am dedicated to creating visually appealing and effective solutions for businesses. Passionate about design</p>
+          <p className='pt-5 text-center text-black md:w-1/2 md:flex md:font-normal animate-jump md:text-left'>I am a professional graphic designer specializing in social media, concept-oriented, and product posts. With expertise in Adobe Photoshop, Illustrator, and Premiere Pro, I deliver high-quality, visually impactful designs tailored to client needs.</p>
           <ResumeButton />
           
         </div>

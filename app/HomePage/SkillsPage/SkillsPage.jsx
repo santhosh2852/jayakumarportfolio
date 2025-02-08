@@ -113,23 +113,23 @@ const SkillsPage = () => {
       <Image
         src={ps}
         alt='Photoshop'
-        width={200}
-        height={200}
-        className='ml-auto mr-auto md:pt-11'
+        width={100}
+        height={100}
+        className='pt-5 ml-auto mr-auto md:pt-11'
       /><br/>
       <Image
         src={illu}
         alt='Illustrator'
-        width={200}
-        height={200}
+        width={100}
+        height={100}
         className='ml-auto mr-auto md:pt-11'
       />
       <Image
         src={pp}
         alt='Premiere Pro'
-        width={200}
-        height={200}
-        className='ml-auto mr-auto md:pt-11'
+        width={100}
+        height={100}
+        className='pt-5 ml-auto mr-auto md:pt-11'
       />
     </div>
     </div>
